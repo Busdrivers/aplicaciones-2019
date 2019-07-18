@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Evaluacion 2</title>
+</head>
+<style>
+table {
+  font-family: arial;
+  border-collapse: collapse;
+  background-color: white;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+ p{
+   font-family: verdana;
+   text-align: center;
+ }
+
+</style>
+
+<body background="interlaced.png">
+  <form method="get">
+    <table align="center">
+      <tr>
+  <th colspan="5" style="text-align:center">EVALUACION SO</th>
+</tr>
+<tr>
+  <td colspan="5" style="text-align:center">Formulario de contacto</td>
+  <tr>
+    <td>Nombre (*)</td>
+    <td width="150" style="border:2px solid black" ><input type="text" name="nombre" required ></td>
+    <td>Apellido (*)</td>
+    <td width="150"style="border:2px solid black"><input type="text" name="apellido" required></td>
+    <td colspan="4" rowspan="5"><img src="boca.jpg" alt="bokita" width="200" height="300"></td>
+  </tr>
+  <tr>
+  <td>DNI (*)</td>
+  <td style="border:2px solid black"><input type="password" name="dni" placeholder=  "****" required></td>
+  <td>Telefono</td>
+  <td style="border:2px solid black"><input type="tel" name="tel" placeholder="+54(11)1234-5678" pattern="```[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}```
+*"></td>
+  </tr>
+  <tr>
+    <td>E-Mail</td>
+    <td colspan="3" style="border:2px solid black"><input type="email" name="email" placeholder="email@ejemplo.com" pattern="```[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$```
+*" required style="width:100%"></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="text-align:center">Comentarios</td>
+  </tr>
+  <tr>
+    <td colspan="4"><textarea name="comentarios" required rows="4" cols="90"></textarea></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td style="text-align:center;background-color:#dddddd;border:2px solid black">
+  <input type="submit" style="width:150px">
+</td>
+<td colspan="3"></td>
+</tr>
+</form>
+</table>
+<p>(*) requerido</p>
+</html>
